@@ -17,3 +17,134 @@ CMakeUserPresets.json
 #  and can be added to the global gitignore or merged into this file.  For a more nuclear
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #cmake-build-*
+
+# Prerequisites
+*.d
+
+# Object files
+*.o
+*.ko
+*.obj
+*.elf
+
+# Linker output
+*.ilk
+*.map
+*.exp
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Libraries
+*.lib
+*.a
+*.la
+*.lo
+
+# Shared objects (inc. Windows DLLs)
+*.dll
+*.so
+*.so.*
+*.dylib
+
+# Executables
+*.exe
+*.out
+*.app
+*.i*86
+*.x86_64
+*.hex
+
+# Debug files
+*.dSYM/
+*.su
+*.idb
+*.pdb
+
+# Kernel Module Compile Results
+*.mod*
+*.cmd
+.tmp_versions/
+modules.order
+Module.symvers
+Mkfile.old
+dkms.conf
+
+# debug information files
+*.dwo
+
+
+# ----------------------------------------------------------------------
+# ESP-IDF Build System & Artifacts (编译产物与系统文件)
+# ----------------------------------------------------------------------
+# 编译生成的文件夹，包含所有的 .o, .elf, .bin 文件
+build/
+
+# sdkconfig 文件处理
+# sdkconfig: 通常建议提交，它是当前项目的配置快照。
+# 如果你希望每个人都有自己的本地配置，可以取消下面这一行的注释：
+sdkconfig
+
+# 旧的配置文件备份 (自动生成的)
+sdkconfig.old
+
+# CMake 产生的临时文件 (通常在 build/ 中，但以防万一)
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+
+# ----------------------------------------------------------------------
+# ESP-IDF Component Manager (组件管理器)
+# ----------------------------------------------------------------------
+# 由组件管理器自动下载的依赖库，不应提交代码，应通过 idf_component.yml 管理
+managed_components/
+
+# 依赖锁文件 (通常建议提交以锁定版本，但如果需要始终用最新版可忽略)
+# dependencies.lock
+
+# ----------------------------------------------------------------------
+# VS Code / Editor Configuration (编辑器配置)
+# ----------------------------------------------------------------------
+# 忽略整个 .vscode 文件夹是比较激进的做法，
+# 但对于 ESP-IDF，c_cpp_properties.json 通常包含绝对路径，不适合跨设备共享。
+.vscode/
+
+# --- 高级设置：如果你想共享 tasks.json 或 launch.json，请取消下面的注释 ---
+# !.vscode/tasks.json
+# !.vscode/launch.json
+# !.vscode/extensions.json
+# !.vscode/settings.json
+
+# VS Code 的历史与缓存
+.history/
+
+# ----------------------------------------------------------------------
+# Python / Virtual Environment (Python 环境)
+# ----------------------------------------------------------------------
+# 字节码缓存
+__pycache__/
+*.pyc
+
+# 本地虚拟环境 (如果你在项目内创建了 venv)
+venv/
+.venv/
+env/
+
+# ----------------------------------------------------------------------
+# System / OS Files (Ubuntu/Linux 系统文件)
+# ----------------------------------------------------------------------
+# 临时文件/编辑器备份
+*~
+*.swp
+*.swo
+
+# GDB 调试产生的 core dump
+core
+core.*
+
+# ----------------------------------------------------------------------
+# Documentation & Misc (文档与杂项)
+# ----------------------------------------------------------------------
+# Doxygen 生成的文档
+docs/doxygen/
